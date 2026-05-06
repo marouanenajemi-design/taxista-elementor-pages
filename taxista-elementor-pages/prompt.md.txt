@@ -1,0 +1,85 @@
+Build a premium WordPress Elementor website based on the screenshots inside the screenshots folder.
+
+IMPORTANT:
+- Recreate the screenshots as close as possible.
+- Extract and reuse ALL visible French text content from the screenshots.
+- Keep the same section structure, layout, cards, spacing, buttons and visual hierarchy.
+- This project is ONLY for Elementor HTML widgets.
+
+OUTPUT:
+Create separate files for each page:
+- accueil.html
+- taxista.html
+- taxista-care.html
+- taxista-confort.html
+- ambulance.html
+- a propos.html
+
+
+EACH FILE MUST CONTAIN:
+- HTML
+- CSS inside <style>
+- JS inside <script> if needed
+
+VERY IMPORTANT RULES:
+- No header
+- No footer
+- No WordPress PHP
+- No React
+- No Bootstrap
+- No Tailwind
+- Pure HTML/CSS/JS only
+- Copy-paste ready for Elementor HTML widget
+- Fully responsive desktop/tablet/mobile
+- No horizontal scroll
+- Use clean modern code
+- Use class prefix tx- for all classes
+- Use placeholder image URLs where needed
+- Use Font Awesome CDN for icons if needed
+
+GLOBAL DESIGN SYSTEM:
+All pages must follow ONE unified professional design system.
+
+Typography:
+- Use Montserrat font everywhere
+- Large bold premium headings
+- Clean readable body text
+
+Main Colors:
+- Dark navy: #001b33
+- Deep black/navy: #020812
+- Main green: #4d7f32
+- Light green: #7fb24a
+- White: #ffffff
+- Soft background: #f6f7f4
+- Border color: #e5e7eb
+
+IMPORTANT:
+- Keep SAME fonts, SAME spacing, SAME buttons, SAME card style and SAME visual identity on all pages.
+- Do NOT create completely different styles for each page.
+- Taxista Care can use green accents.
+- Taxista Confort can use blue accents.
+- Taxi page can use yellow accents.
+- Ambulance page can use small red accents.
+- But ALL pages must still feel like the same website.
+
+LAYOUT RULES:
+- Full width sections
+- Premium shadows
+- Modern rounded cards
+- Luxury transport/taxi company style
+- Proper spacing between sections
+- Strong responsive behavior
+- Beautiful hover effects
+- Elegant CTA buttons
+
+WORKFLOW:
+1. Read screenshots carefully.
+2. Analyze all sections before coding.
+3. Recreate the design as close as possible.
+4. Generate complete HTML files.
+
+IMPORTANT:
+Do not skip sections.
+Do not simplify the layout too much.
+Make the result look premium and very close to the screenshots.
