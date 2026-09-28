@@ -1,0 +1,9 @@
+{
+  "name": "fischer-messtechnik-homepage-prototype",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Homepage redesign prototype for Fischer Messtechnik",
+  "scripts": {
+    "start": "npx --yes http-server . -p 8080 -c-1"
+  }
+}
