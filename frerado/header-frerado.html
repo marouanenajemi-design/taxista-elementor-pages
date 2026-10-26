@@ -1,0 +1,706 @@
+<!--
+  FRERADO — Header complet (top bar + navigation + Catégories / Recherche)
+  À coller dans UN SEUL widget HTML du modèle Header Elementor / UAE.
+  Aucune dépendance externe. Classes et ids préfixés « frerado-header- ».
+
+  >>> SEUL LIEN À COMPLÉTER : « À propos » — remplacer href="#COMPLETER-URL-A-PROPOS"
+      (repéré par le commentaire « URL À PROPOS » plus bas).
+  >>> Réseaux sociaux : bloc commenté « RÉSEAUX SOCIAUX » dans la top bar, à décommenter
+      une fois les vraies URL connues.
+-->
+<div class="frerado-header" id="frerado-header-root">
+
+  <!-- 1. TOP BAR -->
+  <div class="frerado-header-top">
+    <div class="frerado-header-wrap frerado-header-top-inner">
+      <ul class="frerado-header-contact">
+        <li class="frerado-header-contact-item">
+          <a class="frerado-header-contact-link" href="tel:+212661068380">
+            <svg class="frerado-header-contact-ico" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+            <span>+212661-068380</span>
+          </a>
+        </li>
+        <li class="frerado-header-contact-item">
+          <a class="frerado-header-contact-link" href="mailto:frerado.import@gmail.com">
+            <svg class="frerado-header-contact-ico" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            <span>frerado.import@gmail.com</span>
+          </a>
+        </li>
+        <li class="frerado-header-contact-item frerado-header-contact-address">
+          <svg class="frerado-header-contact-ico" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <span>Zone Industrielle, Tit Mellil, Casablanca, Maroc</span>
+        </li>
+      </ul>
+
+      <!-- RÉSEAUX SOCIAUX : URL non fournies, bloc désactivé.
+           Pour l'activer : supprimer cette ligne de commentaire et la ligne « FIN RÉSEAUX SOCIAUX »,
+           puis remplacer chaque COLLER-URL-… par l'adresse réelle (supprimer les <li> inutiles).
+      <ul class="frerado-header-social">
+        <li><a class="frerado-header-social-link" href="COLLER-URL-FACEBOOK" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v4H8v7h4v-7h3l.5-4H12V8a1 1 0 0 1 1-1h2z"/></svg></a></li>
+        <li><a class="frerado-header-social-link" href="COLLER-URL-X" target="_blank" rel="noopener" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4l16 16M20 4L4 20"/></svg></a></li>
+        <li><a class="frerado-header-social-link" href="COLLER-URL-INSTAGRAM" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg></a></li>
+        <li><a class="frerado-header-social-link" href="COLLER-URL-YOUTUBE" target="_blank" rel="noopener" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg></a></li>
+      </ul>
+      FIN RÉSEAUX SOCIAUX -->
+    </div>
+  </div>
+
+  <!-- 2. NAVIGATION PRINCIPALE -->
+  <div class="frerado-header-main">
+    <div class="frerado-header-wrap frerado-header-main-inner">
+      <a class="frerado-header-logo" href="https://frerado.com/">
+        <img class="frerado-header-logo-img" src="https://frerado.com/wp-content/uploads/2026/06/ChatGPT-Image-13-juin-2026-20_19_32.webp" alt="FRERADO" decoding="async">
+      </a>
+
+      <button type="button" class="frerado-header-burger" aria-expanded="false" aria-controls="frerado-header-menu">
+        <svg class="frerado-header-burger-open" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="frerado-header-burger-close" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        <span class="frerado-header-sr">Menu</span>
+      </button>
+
+      <div class="frerado-header-menu" id="frerado-header-menu">
+        <nav class="frerado-header-nav" aria-label="Navigation principale">
+          <ul class="frerado-header-nav-list">
+            <li class="frerado-header-nav-item"><a class="frerado-header-nav-link" href="https://frerado.com/">Accueil</a></li>
+            <!-- URL À PROPOS : remplacer #COMPLETER-URL-A-PROPOS par l'adresse réelle de la page -->
+            <li class="frerado-header-nav-item"><a class="frerado-header-nav-link" href="#COMPLETER-URL-A-PROPOS">À propos</a></li>
+            <li class="frerado-header-nav-item"><a class="frerado-header-nav-link" href="https://frerado.com/contact-nous/">Contact-Nous</a></li>
+          </ul>
+        </nav>
+        <a class="frerado-header-cta" href="https://frerado.com/contact-nous/">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
+          <span>Demander un devis</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. CATÉGORIES + RECHERCHE -->
+  <div class="frerado-header-catbar">
+    <div class="frerado-header-wrap frerado-header-catbar-inner">
+
+      <div class="frerado-header-cats">
+        <button type="button" class="frerado-header-cats-toggle" aria-expanded="false" aria-controls="frerado-header-cats-panel">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <span>Catégories</span>
+          <svg class="frerado-header-cats-chevron" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+
+        <div class="frerado-header-cats-panel" id="frerado-header-cats-panel">
+          <nav class="frerado-header-cats-nav" aria-label="Catégories de produits">
+            <p class="frerado-header-cats-title">Nos catégories de produits</p>
+            <ul class="frerado-header-cats-list">
+              <li class="frerado-header-cats-item"><a class="frerado-header-cats-link" href="https://frerado.com/product-category/automatisme-industriel/">
+                <span class="frerado-header-cats-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></span>
+                <span class="frerado-header-cats-text">Automatisme Industriel</span></a></li>
+              <li class="frerado-header-cats-item"><a class="frerado-header-cats-link" href="https://frerado.com/product-category/electrotechnique/">
+                <span class="frerado-header-cats-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>
+                <span class="frerado-header-cats-text">Électrotechnique</span></a></li>
+              <li class="frerado-header-cats-item"><a class="frerado-header-cats-link" href="https://frerado.com/product-category/pneumatique-et-hydraulique/">
+                <span class="frerado-header-cats-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><path d="M12 3s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11z"/><path d="M9.5 15a2.5 2.5 0 0 0 2.5 2.5"/></svg></span>
+                <span class="frerado-header-cats-text">Pneumatique et Hydraulique</span></a></li>
+              <li class="frerado-header-cats-item"><a class="frerado-header-cats-link" href="https://frerado.com/product-category/moteurs-electriques/">
+                <span class="frerado-header-cats-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><rect x="3" y="7" width="13" height="10" rx="2"/><path d="M16 12h5M7 7v10M10 7v10M13 7v10M6 17v3h7v-3"/></svg></span>
+                <span class="frerado-header-cats-text">Moteurs Électriques</span></a></li>
+              <li class="frerado-header-cats-item"><a class="frerado-header-cats-link" href="https://frerado.com/product-category/reduction-et-variation-de-vitesse/">
+                <span class="frerado-header-cats-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><circle cx="8.5" cy="14" r="5"/><circle cx="8.5" cy="14" r="1.5"/><circle cx="17.5" cy="7" r="3.5"/><circle cx="17.5" cy="7" r="1"/></svg></span>
+                <span class="frerado-header-cats-text">Réduction et Variation de Vitesse</span></a></li>
+              <li class="frerado-header-cats-item"><a class="frerado-header-cats-link" href="https://frerado.com/product-category/moto-pompes/">
+                <span class="frerado-header-cats-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><circle cx="10" cy="14" r="6"/><circle cx="10" cy="14" r="2"/><path d="M16 14h5M10 8V3h4"/></svg></span>
+                <span class="frerado-header-cats-text">Moto-Pompes</span></a></li>
+              <li class="frerado-header-cats-item"><a class="frerado-header-cats-link" href="https://frerado.com/product-category/ventilation-industrielle/">
+                <span class="frerado-header-cats-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><path d="M3 8h10a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h7"/></svg></span>
+                <span class="frerado-header-cats-text">Ventilation Industrielle</span></a></li>
+              <li class="frerado-header-cats-item"><a class="frerado-header-cats-link" href="https://frerado.com/product-category/roulements/">
+                <span class="frerado-header-cats-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><circle cx="12" cy="5.8" r="1.2"/><circle cx="12" cy="18.2" r="1.2"/><circle cx="5.8" cy="12" r="1.2"/><circle cx="18.2" cy="12" r="1.2"/></svg></span>
+                <span class="frerado-header-cats-text">Roulements</span></a></li>
+              <li class="frerado-header-cats-item"><a class="frerado-header-cats-link" href="https://frerado.com/product-category/variateurs-de-frequence/">
+                <span class="frerado-header-cats-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></svg></span>
+                <span class="frerado-header-cats-text">Variateurs de Fréquence</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <form class="frerado-header-search" role="search" method="get" action="https://frerado.com/">
+        <label class="frerado-header-sr" for="frerado-header-search-input">Rechercher un produit</label>
+        <input class="frerado-header-search-input" id="frerado-header-search-input" type="search" name="s" placeholder="Rechercher un produit…" autocomplete="off" enterkeyhint="search">
+        <input type="hidden" name="post_type" value="product">
+        <button class="frerado-header-search-submit" type="submit">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          <span class="frerado-header-sr">Lancer la recherche</span>
+        </button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<style>
+.frerado-header{
+  --frerado-header-navy:#0b2447;
+  --frerado-header-navy-deep:#081a35;
+  --frerado-header-blue:#1565d8;
+  --frerado-header-blue-dark:#0f4fae;
+  --frerado-header-blue-soft:#eaf2fd;
+  --frerado-header-bg-soft:#f3f6fa;
+  --frerado-header-line:#d9e1ec;
+  --frerado-header-text:#1c2b40;
+  --frerado-header-muted:#5d6b80;
+  --frerado-header-white:#ffffff;
+  --frerado-header-max:1280px;
+  --frerado-header-gutter:24px;
+  --frerado-header-ctrl:44px;
+  --frerado-header-ring:0 0 0 3px #ffffff,0 0 0 5px #1565d8;
+  position:relative;
+  z-index:100;
+  display:block;
+  width:100%;
+  max-width:100%;
+  margin:0;
+  padding:0;
+  background:var(--frerado-header-white);
+  color:var(--frerado-header-text);
+  font-family:inherit;
+  font-size:15px;
+  line-height:1.4;
+  text-align:left;
+}
+.frerado-header *,
+.frerado-header *::before,
+.frerado-header *::after{box-sizing:border-box}
+
+/* --- Neutralisation locale des styles du thème --- */
+.frerado-header ul,
+.frerado-header li{display:block;margin:0;padding:0;list-style:none;background:none;border:0}
+.frerado-header li::before,
+.frerado-header li::marker{content:none}
+.frerado-header p{margin:0}
+.frerado-header svg{display:block;flex:0 0 auto;width:auto;max-width:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.frerado-header a,
+.frerado-header a:visited,
+.frerado-header a:hover,
+.frerado-header a:focus{text-decoration:none;font-family:inherit}
+.frerado-header button,
+.frerado-header button:hover,
+.frerado-header button:focus{
+  margin:0;
+  border:0;
+  border-radius:0;
+  background:none;
+  box-shadow:none;
+  font-family:inherit;
+  text-transform:none;
+  letter-spacing:normal;
+  line-height:1;
+  -webkit-appearance:none;
+  appearance:none;
+}
+.frerado-header .frerado-header-sr{
+  position:absolute;
+  width:1px;
+  height:1px;
+  margin:-1px;
+  padding:0;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  white-space:nowrap;
+  border:0;
+}
+.frerado-header .frerado-header-wrap{
+  width:100%;
+  max-width:var(--frerado-header-max);
+  margin:0 auto;
+  padding:0 var(--frerado-header-gutter);
+}
+
+/* --- 1. Top bar --- */
+.frerado-header .frerado-header-top{background:var(--frerado-header-navy-deep);color:var(--frerado-header-white)}
+.frerado-header .frerado-header-top-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:38px}
+.frerado-header .frerado-header-contact{display:flex;flex-wrap:wrap;align-items:center;gap:4px 22px;min-width:0}
+.frerado-header .frerado-header-contact-item{display:flex;align-items:center;min-width:0;font-size:13px;line-height:1.3;color:rgba(255,255,255,.88)}
+.frerado-header .frerado-header-contact-address{gap:8px}
+.frerado-header .frerado-header-contact-link,
+.frerado-header .frerado-header-contact-link:visited{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  min-height:38px;
+  color:var(--frerado-header-white);
+  font-size:13px;
+  font-weight:500;
+}
+.frerado-header .frerado-header-contact-link:hover{color:#9cc3ff}
+.frerado-header .frerado-header-contact-link:focus-visible,
+.frerado-header .frerado-header-social-link:focus-visible{outline:2px solid #9cc3ff;outline-offset:2px;border-radius:3px}
+.frerado-header .frerado-header-contact-ico{color:#6aa5ff}
+.frerado-header .frerado-header-contact span{min-width:0;overflow-wrap:anywhere}
+.frerado-header .frerado-header-social{display:flex;align-items:center;gap:4px;flex:0 0 auto}
+.frerado-header .frerado-header-social-link,
+.frerado-header .frerado-header-social-link:visited{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;color:var(--frerado-header-white);border-radius:50%}
+.frerado-header .frerado-header-social-link:hover{color:#9cc3ff}
+
+/* --- 2. Navigation principale --- */
+.frerado-header .frerado-header-main{position:relative;background:var(--frerado-header-white);border-bottom:1px solid var(--frerado-header-line)}
+.frerado-header .frerado-header-main-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:72px}
+.frerado-header .frerado-header-logo,
+.frerado-header .frerado-header-logo:visited{display:inline-flex;align-items:center;flex:0 0 auto;padding:6px 0;border-radius:4px}
+.frerado-header .frerado-header-logo:focus-visible{outline:2px solid var(--frerado-header-blue);outline-offset:3px}
+.frerado-header .frerado-header-logo-img{
+  display:block;
+  width:auto;
+  height:54px;
+  max-width:240px;
+  max-height:none;
+  object-fit:contain;
+  object-position:left center;
+  margin:0;
+  padding:0;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+}
+.frerado-header .frerado-header-menu{display:flex;align-items:center;gap:28px;min-width:0}
+.frerado-header .frerado-header-nav{display:block;margin:0;padding:0;background:none}
+.frerado-header .frerado-header-nav-list{display:flex;align-items:center;gap:6px}
+.frerado-header .frerado-header-nav-link,
+.frerado-header .frerado-header-nav-link:visited{
+  position:relative;
+  display:flex;
+  align-items:center;
+  min-height:var(--frerado-header-ctrl);
+  padding:0 14px;
+  border-radius:6px;
+  color:var(--frerado-header-navy);
+  font-size:15px;
+  font-weight:600;
+  line-height:1.2;
+  white-space:nowrap;
+  transition:color .2s ease,background-color .2s ease;
+}
+.frerado-header .frerado-header-nav-link::after{
+  content:"";
+  position:absolute;
+  left:14px;
+  right:14px;
+  bottom:6px;
+  height:2px;
+  border-radius:2px;
+  background:var(--frerado-header-blue);
+  transform:scaleX(0);
+  transition:transform .2s ease;
+}
+.frerado-header .frerado-header-nav-link:hover,
+.frerado-header .frerado-header-nav-link[aria-current="page"]{color:var(--frerado-header-blue)}
+.frerado-header .frerado-header-nav-link:hover::after,
+.frerado-header .frerado-header-nav-link[aria-current="page"]::after{transform:scaleX(1)}
+.frerado-header .frerado-header-nav-link:focus-visible{outline:2px solid var(--frerado-header-blue);outline-offset:0}
+.frerado-header .frerado-header-cta,
+.frerado-header .frerado-header-cta:visited{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  min-height:46px;
+  padding:0 22px;
+  border-radius:6px;
+  background:var(--frerado-header-blue);
+  color:var(--frerado-header-white);
+  font-size:14px;
+  font-weight:700;
+  line-height:1.1;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  white-space:nowrap;
+  box-shadow:0 6px 16px rgba(21,101,216,.22);
+  transition:background-color .2s ease,box-shadow .2s ease;
+}
+.frerado-header .frerado-header-cta:hover{background:var(--frerado-header-blue-dark);color:var(--frerado-header-white);box-shadow:0 8px 20px rgba(21,101,216,.3)}
+.frerado-header .frerado-header-cta:focus-visible{outline:none;box-shadow:var(--frerado-header-ring)}
+
+/* Bouton hamburger : visible uniquement en mode mobile avec JS */
+.frerado-header .frerado-header-burger{display:none}
+.frerado-header .frerado-header-burger,
+.frerado-header .frerado-header-burger:hover,
+.frerado-header .frerado-header-burger:focus{
+  align-items:center;
+  justify-content:center;
+  width:var(--frerado-header-ctrl);
+  height:var(--frerado-header-ctrl);
+  padding:0;
+  border:1px solid var(--frerado-header-line);
+  border-radius:8px;
+  background:var(--frerado-header-white);
+  color:var(--frerado-header-navy);
+  cursor:pointer;
+}
+.frerado-header .frerado-header-burger:hover{border-color:var(--frerado-header-blue);color:var(--frerado-header-blue)}
+.frerado-header .frerado-header-burger:focus-visible{outline:none;box-shadow:var(--frerado-header-ring)}
+.frerado-header .frerado-header-burger-close{display:none}
+.frerado-header.frerado-header-menu-open .frerado-header-burger-open{display:none}
+.frerado-header.frerado-header-menu-open .frerado-header-burger-close{display:block}
+
+/* --- 3. Catégories + recherche --- */
+.frerado-header .frerado-header-catbar{background:var(--frerado-header-bg-soft);border-bottom:1px solid var(--frerado-header-line)}
+.frerado-header .frerado-header-catbar-inner{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}
+.frerado-header .frerado-header-cats{position:relative;flex:0 0 auto;min-width:0}
+.frerado-header .frerado-header-cats-toggle,
+.frerado-header .frerado-header-cats-toggle:hover,
+.frerado-header .frerado-header-cats-toggle:focus{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  width:auto;
+  height:var(--frerado-header-ctrl);
+  padding:0 16px;
+  border:1px solid var(--frerado-header-navy);
+  border-radius:6px;
+  background:var(--frerado-header-navy);
+  color:var(--frerado-header-white);
+  font-size:15px;
+  font-weight:600;
+  white-space:nowrap;
+  cursor:pointer;
+  transition:background-color .2s ease,border-color .2s ease;
+}
+.frerado-header .frerado-header-cats-toggle:hover,
+.frerado-header .frerado-header-cats-toggle[aria-expanded="true"]{background:var(--frerado-header-blue);border-color:var(--frerado-header-blue);color:var(--frerado-header-white)}
+.frerado-header .frerado-header-cats-toggle:focus-visible{outline:none;box-shadow:var(--frerado-header-ring)}
+.frerado-header .frerado-header-cats-chevron{transition:transform .2s ease}
+.frerado-header .frerado-header-cats-toggle[aria-expanded="true"] .frerado-header-cats-chevron{transform:rotate(180deg)}
+
+/* Panneau : sans JS il s'affiche en liste statique (toujours accessible) */
+.frerado-header .frerado-header-cats-panel{
+  width:360px;
+  max-width:100%;
+  margin-top:8px;
+  border:1px solid var(--frerado-header-line);
+  border-radius:10px;
+  background:var(--frerado-header-white);
+  box-shadow:0 16px 36px rgba(11,36,71,.16),0 2px 6px rgba(11,36,71,.06);
+  overflow:hidden;
+}
+.frerado-header.frerado-header-js .frerado-header-cats-panel{
+  position:absolute;
+  top:100%;
+  left:0;
+  z-index:30;
+  max-width:none;
+  max-height:min(560px,calc(100vh - 120px));
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  visibility:hidden;
+  opacity:0;
+  transform:translateY(-6px);
+  pointer-events:none;
+  transition:opacity .18s ease,transform .18s ease,visibility 0s linear .18s;
+}
+.frerado-header.frerado-header-cats-open .frerado-header-cats-panel{
+  visibility:visible;
+  opacity:1;
+  transform:none;
+  pointer-events:auto;
+  transition:opacity .18s ease,transform .18s ease,visibility 0s;
+}
+.frerado-header .frerado-header-cats-nav{display:block;margin:0;padding:8px;background:none}
+.frerado-header .frerado-header-cats-title{padding:8px 12px 10px;color:var(--frerado-header-muted);font-size:12px;font-weight:700;letter-spacing:.08em;line-height:1.3;text-transform:uppercase}
+.frerado-header .frerado-header-cats-link,
+.frerado-header .frerado-header-cats-link:visited{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-height:48px;
+  padding:7px 12px;
+  border-radius:8px;
+  color:var(--frerado-header-text);
+  font-size:15px;
+  font-weight:500;
+  line-height:1.3;
+  transition:background-color .15s ease,color .15s ease;
+}
+.frerado-header .frerado-header-cats-link:hover,
+.frerado-header .frerado-header-cats-link:focus-visible{background:var(--frerado-header-blue-soft);color:var(--frerado-header-blue-dark)}
+.frerado-header .frerado-header-cats-link:focus-visible{outline:2px solid var(--frerado-header-blue);outline-offset:-2px}
+.frerado-header .frerado-header-cats-ico{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 34px;
+  width:34px;
+  height:34px;
+  border-radius:8px;
+  background:var(--frerado-header-blue-soft);
+  color:var(--frerado-header-blue);
+  transition:background-color .15s ease,color .15s ease;
+}
+.frerado-header .frerado-header-cats-ico svg{stroke-width:1.7}
+.frerado-header .frerado-header-cats-link:hover .frerado-header-cats-ico,
+.frerado-header .frerado-header-cats-link:focus-visible .frerado-header-cats-ico{background:var(--frerado-header-blue);color:var(--frerado-header-white)}
+.frerado-header .frerado-header-cats-text{flex:1 1 auto;min-width:0;overflow-wrap:anywhere}
+
+/* Recherche WooCommerce */
+.frerado-header .frerado-header-search{
+  display:flex;
+  align-items:stretch;
+  flex:1 1 auto;
+  min-width:0;
+  height:var(--frerado-header-ctrl);
+  margin:0;
+  padding:0;
+  border:1px solid var(--frerado-header-line);
+  border-radius:6px;
+  background:var(--frerado-header-white);
+  overflow:hidden;
+  transition:border-color .2s ease,box-shadow .2s ease;
+}
+.frerado-header .frerado-header-search:hover{border-color:#b7c4d6}
+.frerado-header .frerado-header-search:focus-within{border-color:var(--frerado-header-blue);box-shadow:0 0 0 3px rgba(21,101,216,.18)}
+.frerado-header .frerado-header-search-input,
+.frerado-header .frerado-header-search-input:focus{
+  flex:1 1 auto;
+  width:100%;
+  min-width:0;
+  height:100%;
+  margin:0;
+  padding:0 14px;
+  border:0;
+  border-radius:0;
+  outline:none;
+  background:transparent;
+  box-shadow:none;
+  color:var(--frerado-header-text);
+  font-family:inherit;
+  font-size:16px;
+  line-height:1.2;
+  -webkit-appearance:none;
+  appearance:none;
+}
+.frerado-header .frerado-header-search-input::placeholder{color:#7c889a;opacity:1}
+.frerado-header .frerado-header-search-input::-webkit-search-decoration{-webkit-appearance:none}
+.frerado-header .frerado-header-search-submit,
+.frerado-header .frerado-header-search-submit:hover,
+.frerado-header .frerado-header-search-submit:focus{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 54px;
+  width:54px;
+  height:100%;
+  padding:0;
+  background:var(--frerado-header-blue);
+  color:var(--frerado-header-white);
+  cursor:pointer;
+  transition:background-color .2s ease;
+}
+.frerado-header .frerado-header-search-submit:hover{background:var(--frerado-header-blue-dark)}
+.frerado-header .frerado-header-search-submit:focus-visible{outline:2px solid var(--frerado-header-white);outline-offset:-5px;background:var(--frerado-header-blue-dark)}
+
+/* --- Desktop intermédiaire --- */
+@media (max-width:1180px){
+  .frerado-header .frerado-header-menu{gap:16px}
+  .frerado-header .frerado-header-nav-link{padding:0 10px}
+  .frerado-header .frerado-header-nav-link::after{left:10px;right:10px}
+  .frerado-header .frerado-header-cta{padding:0 18px}
+}
+
+/* --- Tablette & mobile : menu hamburger --- */
+@media (max-width:991px){
+  .frerado-header{--frerado-header-gutter:16px}
+  .frerado-header .frerado-header-main-inner{min-height:64px;gap:12px}
+  .frerado-header .frerado-header-logo-img{height:46px;max-width:200px}
+  .frerado-header .frerado-header-contact-link{min-height:var(--frerado-header-ctrl)}
+
+  /* Sans JS : navigation lisible sur une ligne sous le logo */
+  .frerado-header .frerado-header-main-inner{flex-wrap:wrap}
+  .frerado-header .frerado-header-menu{flex-wrap:wrap;gap:8px 16px;padding-bottom:10px}
+  .frerado-header .frerado-header-nav-list{flex-wrap:wrap}
+
+  /* Avec JS : panneau déroulant */
+  .frerado-header.frerado-header-js .frerado-header-main-inner{flex-wrap:nowrap}
+  .frerado-header.frerado-header-js .frerado-header-burger{display:inline-flex}
+  .frerado-header.frerado-header-js .frerado-header-menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    z-index:40;
+    display:block;
+    padding:8px var(--frerado-header-gutter) 16px;
+    background:var(--frerado-header-white);
+    border-top:1px solid var(--frerado-header-line);
+    border-bottom:1px solid var(--frerado-header-line);
+    box-shadow:0 18px 30px rgba(11,36,71,.14);
+    max-height:calc(100vh - 110px);
+    overflow-y:auto;
+    visibility:hidden;
+    opacity:0;
+    transform:translateY(-6px);
+    pointer-events:none;
+    transition:opacity .18s ease,transform .18s ease,visibility 0s linear .18s;
+  }
+  .frerado-header.frerado-header-js.frerado-header-menu-open .frerado-header-menu{
+    visibility:visible;
+    opacity:1;
+    transform:none;
+    pointer-events:auto;
+    transition:opacity .18s ease,transform .18s ease,visibility 0s;
+  }
+  .frerado-header.frerado-header-js .frerado-header-nav-list{display:block}
+  .frerado-header.frerado-header-js .frerado-header-nav-item + .frerado-header-nav-item{border-top:1px solid #edf1f6}
+  .frerado-header.frerado-header-js .frerado-header-nav-link{min-height:50px;padding:0 4px;font-size:16px}
+  .frerado-header.frerado-header-js .frerado-header-nav-link::after{display:none}
+  .frerado-header.frerado-header-js .frerado-header-nav-link:hover,
+  .frerado-header.frerado-header-js .frerado-header-nav-link[aria-current="page"]{background:var(--frerado-header-blue-soft);padding-left:12px}
+  .frerado-header.frerado-header-js .frerado-header-cta{display:flex;width:100%;margin-top:12px;min-height:48px}
+}
+
+/* --- Mobile : top bar compacte, catégories et recherche sur deux lignes --- */
+@media (max-width:600px){
+  .frerado-header .frerado-header-top-inner{justify-content:center;padding-top:4px;padding-bottom:6px}
+  .frerado-header .frerado-header-contact{justify-content:center;gap:0 18px}
+  .frerado-header .frerado-header-contact-link{min-height:var(--frerado-header-ctrl);font-size:12.5px}
+  .frerado-header .frerado-header-contact-address{flex:1 1 100%;justify-content:center;text-align:center;font-size:12px;color:rgba(255,255,255,.75)}
+  .frerado-header .frerado-header-logo-img{height:42px;max-width:170px}
+  .frerado-header .frerado-header-catbar-inner{flex-wrap:wrap;gap:8px}
+  .frerado-header .frerado-header-cats{flex:1 1 100%}
+  .frerado-header .frerado-header-cats-toggle,
+  .frerado-header .frerado-header-cats-toggle:hover,
+  .frerado-header .frerado-header-cats-toggle:focus{width:100%}
+  .frerado-header .frerado-header-cats-chevron{margin-left:auto}
+  .frerado-header .frerado-header-cats-panel,
+  .frerado-header.frerado-header-js .frerado-header-cats-panel{width:100%;right:0}
+  .frerado-header .frerado-header-search{flex:1 1 100%}
+}
+
+.frerado-header.frerado-header-noanim *,
+.frerado-header.frerado-header-noanim .frerado-header-cats-panel,
+.frerado-header.frerado-header-noanim .frerado-header-menu{transition:none !important}
+
+@media (prefers-reduced-motion:reduce){
+  .frerado-header *,
+  .frerado-header.frerado-header-js .frerado-header-cats-panel,
+  .frerado-header.frerado-header-js .frerado-header-menu{transition:none !important}
+  .frerado-header.frerado-header-js .frerado-header-cats-panel,
+  .frerado-header.frerado-header-js .frerado-header-menu{transform:none !important}
+}
+</style>
+
+<script>
+(function () {
+  'use strict';
+
+  var READY = 'data-frerado-header-ready';
+  var MOBILE = '(max-width: 991px)';
+
+  function init(root) {
+    if (root.hasAttribute(READY)) return;
+    root.setAttribute(READY, '1');
+
+    var burger = root.querySelector('.frerado-header-burger');
+    var menu = root.querySelector('.frerado-header-menu');
+    var cats = root.querySelector('.frerado-header-cats');
+    var catsToggle = root.querySelector('.frerado-header-cats-toggle');
+    var catsPanel = root.querySelector('.frerado-header-cats-panel');
+    if (!burger || !menu || !cats || !catsToggle || !catsPanel) return;
+
+    // Bascule en mode « JS » sans animation pour éviter tout flash des panneaux au chargement.
+    root.classList.add('frerado-header-noanim', 'frerado-header-js');
+    var raf = window.requestAnimationFrame || function (f) { return setTimeout(f, 16); };
+    raf(function () { raf(function () { root.classList.remove('frerado-header-noanim'); }); });
+
+    function isOpen(cls) { return root.classList.contains(cls); }
+
+    function setMenu(open, returnFocus) {
+      if (open) setCats(false);
+      root.classList.toggle('frerado-header-menu-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (!open && returnFocus) burger.focus();
+    }
+
+    function setCats(open, returnFocus) {
+      if (open) setMenu(false);
+      root.classList.toggle('frerado-header-cats-open', open);
+      catsToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (!open && returnFocus) catsToggle.focus();
+    }
+
+    function catLinks() {
+      return Array.prototype.slice.call(catsPanel.querySelectorAll('.frerado-header-cats-link'));
+    }
+    function focusCat(i) {
+      var list = catLinks();
+      if (list.length) list[(i + list.length) % list.length].focus();
+    }
+
+    burger.addEventListener('click', function () {
+      setMenu(!isOpen('frerado-header-menu-open'));
+    });
+
+    catsToggle.addEventListener('click', function () {
+      setCats(!isOpen('frerado-header-cats-open'));
+    });
+
+    // Raccourcis optionnels : flèches pour parcourir les catégories (Tab reste la navigation standard).
+    catsToggle.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowDown') { e.preventDefault(); setCats(true); focusCat(0); }
+    });
+    catsPanel.addEventListener('keydown', function (e) {
+      var i = catLinks().indexOf(document.activeElement);
+      if (i === -1) return;
+      if (e.key === 'ArrowDown') { e.preventDefault(); focusCat(i + 1); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); focusCat(i - 1); }
+    });
+
+    root.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape' && e.key !== 'Esc') return;
+      if (isOpen('frerado-header-cats-open')) { e.preventDefault(); setCats(false, true); }
+      else if (isOpen('frerado-header-menu-open')) { e.preventDefault(); setMenu(false, true); }
+    });
+
+    // Le focus quitte un menu au clavier : on le referme sans déplacer le focus.
+    cats.addEventListener('focusout', function (e) {
+      if (e.relatedTarget && !cats.contains(e.relatedTarget)) setCats(false);
+    });
+    menu.addEventListener('focusout', function (e) {
+      var t = e.relatedTarget;
+      if (t && !menu.contains(t) && t !== burger) setMenu(false);
+    });
+
+    // Clic ou toucher en dehors.
+    document.addEventListener('pointerdown', function (e) {
+      if (!root.isConnected) return;
+      var t = e.target;
+      if (isOpen('frerado-header-cats-open') && !cats.contains(t)) setCats(false);
+      if (isOpen('frerado-header-menu-open') && !menu.contains(t) && !burger.contains(t)) setMenu(false);
+    });
+
+    // Passage mobile <-> desktop : on remet tout à zéro.
+    var mq = window.matchMedia ? window.matchMedia(MOBILE) : null;
+    if (mq) {
+      var reset = function () { setMenu(false); setCats(false); };
+      if (mq.addEventListener) mq.addEventListener('change', reset);
+      else if (mq.addListener) mq.addListener(reset);
+    }
+
+    // Lien de la page courante.
+    var here = window.location.pathname.replace(/\/+$/, '') || '/';
+    var navLinks = root.querySelectorAll('.frerado-header-nav-link');
+    for (var i = 0; i < navLinks.length; i++) {
+      var a = navLinks[i];
+      if (a.getAttribute('href').charAt(0) === '#') continue;
+      var path = a.pathname.replace(/\/+$/, '') || '/';
+      if (a.hostname === window.location.hostname && path === here) a.setAttribute('aria-current', 'page');
+    }
+  }
+
+  function run() {
+    var roots = document.querySelectorAll('.frerado-header');
+    for (var i = 0; i < roots.length; i++) init(roots[i]);
+  }
+
+  // Le header précède ce script : on l'initialise tout de suite (pas de saut de mise en page),
+  // puis à nouveau au DOMContentLoaded pour tout header ajouté entre-temps (déjà initialisés ignorés).
+  run();
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run);
+})();
+</script>
