@@ -1,0 +1,477 @@
+<!--
+  FRERADO — Barre « Catégories + Recherche produits »
+  À coller dans UN widget HTML Elementor, sous la navigation existante.
+  Aucune dépendance externe. Toutes les classes/ids sont préfixés « frerado-catalogbar- ».
+
+  >>> URL DES CATÉGORIES : remplacer les 9 valeurs href="#COLLER-URL-CATEGORIE-1" … "-9"
+      (repérées par les commentaires « URL 1 » à « URL 9 » plus bas) par les liens réels
+      de vos archives WooCommerce, ex. https://frerado.com/categorie-produit/…/
+-->
+<div class="frerado-catalogbar-root" id="frerado-catalogbar-root">
+  <div class="frerado-catalogbar-inner">
+
+    <div class="frerado-catalogbar-cats">
+      <button type="button" class="frerado-catalogbar-toggle" id="frerado-catalogbar-toggle" aria-expanded="false" aria-controls="frerado-catalogbar-panel">
+        <svg class="frerado-catalogbar-toggle-icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="frerado-catalogbar-toggle-label">Catégories</span>
+        <svg class="frerado-catalogbar-toggle-chevron" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <div class="frerado-catalogbar-panel" id="frerado-catalogbar-panel">
+        <nav class="frerado-catalogbar-nav" aria-label="Catégories de produits">
+          <p class="frerado-catalogbar-panel-title">Nos catégories de produits</p>
+          <ul class="frerado-catalogbar-list">
+            <!-- URL 1 : Automatisme Industriel -->
+            <li class="frerado-catalogbar-item"><a class="frerado-catalogbar-link" href="#COLLER-URL-CATEGORIE-1">
+              <span class="frerado-catalogbar-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></span>
+              <span class="frerado-catalogbar-text">Automatisme Industriel</span>
+            </a></li>
+            <!-- URL 2 : Électrotechnique -->
+            <li class="frerado-catalogbar-item"><a class="frerado-catalogbar-link" href="#COLLER-URL-CATEGORIE-2">
+              <span class="frerado-catalogbar-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>
+              <span class="frerado-catalogbar-text">Électrotechnique</span>
+            </a></li>
+            <!-- URL 3 : Pneumatique et Hydraulique -->
+            <li class="frerado-catalogbar-item"><a class="frerado-catalogbar-link" href="#COLLER-URL-CATEGORIE-3">
+              <span class="frerado-catalogbar-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><path d="M12 3s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11z"/><path d="M9.5 15a2.5 2.5 0 0 0 2.5 2.5"/></svg></span>
+              <span class="frerado-catalogbar-text">Pneumatique et Hydraulique</span>
+            </a></li>
+            <!-- URL 4 : Moteurs Électriques -->
+            <li class="frerado-catalogbar-item"><a class="frerado-catalogbar-link" href="#COLLER-URL-CATEGORIE-4">
+              <span class="frerado-catalogbar-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><rect x="3" y="7" width="13" height="10" rx="2"/><path d="M16 12h5M7 7v10M10 7v10M13 7v10M6 17v3h7v-3"/></svg></span>
+              <span class="frerado-catalogbar-text">Moteurs Électriques</span>
+            </a></li>
+            <!-- URL 5 : Réduction et Variation de Vitesse -->
+            <li class="frerado-catalogbar-item"><a class="frerado-catalogbar-link" href="#COLLER-URL-CATEGORIE-5">
+              <span class="frerado-catalogbar-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><circle cx="8.5" cy="14" r="5"/><circle cx="8.5" cy="14" r="1.5"/><circle cx="17.5" cy="7" r="3.5"/><circle cx="17.5" cy="7" r="1"/></svg></span>
+              <span class="frerado-catalogbar-text">Réduction et Variation de Vitesse</span>
+            </a></li>
+            <!-- URL 6 : Moto-Pompes -->
+            <li class="frerado-catalogbar-item"><a class="frerado-catalogbar-link" href="#COLLER-URL-CATEGORIE-6">
+              <span class="frerado-catalogbar-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><circle cx="10" cy="14" r="6"/><circle cx="10" cy="14" r="2"/><path d="M16 14h5M10 8V3h4"/></svg></span>
+              <span class="frerado-catalogbar-text">Moto-Pompes</span>
+            </a></li>
+            <!-- URL 7 : Ventilation Industrielle -->
+            <li class="frerado-catalogbar-item"><a class="frerado-catalogbar-link" href="#COLLER-URL-CATEGORIE-7">
+              <span class="frerado-catalogbar-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><path d="M3 8h10a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h7"/></svg></span>
+              <span class="frerado-catalogbar-text">Ventilation Industrielle</span>
+            </a></li>
+            <!-- URL 8 : Roulements -->
+            <li class="frerado-catalogbar-item"><a class="frerado-catalogbar-link" href="#COLLER-URL-CATEGORIE-8">
+              <span class="frerado-catalogbar-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><circle cx="12" cy="5.8" r="1.2"/><circle cx="12" cy="18.2" r="1.2"/><circle cx="5.8" cy="12" r="1.2"/><circle cx="18.2" cy="12" r="1.2"/></svg></span>
+              <span class="frerado-catalogbar-text">Roulements</span>
+            </a></li>
+            <!-- URL 9 : Variateurs de Fréquence -->
+            <li class="frerado-catalogbar-item"><a class="frerado-catalogbar-link" href="#COLLER-URL-CATEGORIE-9">
+              <span class="frerado-catalogbar-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" focusable="false"><path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></svg></span>
+              <span class="frerado-catalogbar-text">Variateurs de Fréquence</span>
+            </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <form class="frerado-catalogbar-search" role="search" method="get" action="https://frerado.com/">
+      <label class="frerado-catalogbar-sr" for="frerado-catalogbar-search-input">Rechercher un produit</label>
+      <input class="frerado-catalogbar-input" id="frerado-catalogbar-search-input" type="search" name="s" placeholder="Rechercher un produit…" autocomplete="off" enterkeyhint="search">
+      <input type="hidden" name="post_type" value="product">
+      <button class="frerado-catalogbar-submit" type="submit" aria-label="Lancer la recherche">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </form>
+
+  </div>
+</div>
+
+<style>
+.frerado-catalogbar-root{
+  --frerado-catalogbar-navy:#0b2447;
+  --frerado-catalogbar-blue:#1565d8;
+  --frerado-catalogbar-blue-dark:#0f4fae;
+  --frerado-catalogbar-blue-soft:#eaf2fd;
+  --frerado-catalogbar-line:#d6dee9;
+  --frerado-catalogbar-text:#1c2b40;
+  --frerado-catalogbar-muted:#5d6b80;
+  --frerado-catalogbar-focus:0 0 0 3px #ffffff,0 0 0 5px #1565d8;
+  position:relative;
+  z-index:60;
+  box-sizing:border-box;
+  width:100%;
+  max-width:100%;
+  padding:10px 0;
+  font-family:inherit;
+  font-size:15px;
+  line-height:1.4;
+  color:var(--frerado-catalogbar-text);
+}
+.frerado-catalogbar-root *,
+.frerado-catalogbar-root *::before,
+.frerado-catalogbar-root *::after{box-sizing:border-box}
+
+.frerado-catalogbar-root .frerado-catalogbar-inner{
+  display:flex;
+  align-items:stretch;
+  gap:12px;
+  position:relative;
+  width:100%;
+  min-width:0;
+}
+.frerado-catalogbar-root .frerado-catalogbar-cats{
+  position:static;
+  flex:0 0 auto;
+  min-width:0;
+}
+
+/* Bouton Catégories */
+.frerado-catalogbar-root .frerado-catalogbar-toggle,
+.frerado-catalogbar-root .frerado-catalogbar-toggle:focus{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  height:48px;
+  min-height:48px;
+  margin:0;
+  padding:0 18px;
+  border:1px solid var(--frerado-catalogbar-navy);
+  border-radius:8px;
+  background:var(--frerado-catalogbar-navy);
+  color:#ffffff;
+  font-family:inherit;
+  font-size:15px;
+  font-weight:600;
+  line-height:1;
+  letter-spacing:.01em;
+  text-transform:none;
+  white-space:nowrap;
+  box-shadow:none;
+  cursor:pointer;
+  transition:background-color .2s ease,border-color .2s ease;
+}
+.frerado-catalogbar-root .frerado-catalogbar-toggle:hover,
+.frerado-catalogbar-root .frerado-catalogbar-toggle[aria-expanded="true"]{
+  background:var(--frerado-catalogbar-blue);
+  border-color:var(--frerado-catalogbar-blue);
+  color:#ffffff;
+}
+.frerado-catalogbar-root .frerado-catalogbar-toggle:focus-visible{
+  outline:none;
+  box-shadow:var(--frerado-catalogbar-focus);
+}
+.frerado-catalogbar-root .frerado-catalogbar-toggle svg{display:block;flex:0 0 auto}
+.frerado-catalogbar-root .frerado-catalogbar-toggle-chevron{transition:transform .2s ease}
+.frerado-catalogbar-root .frerado-catalogbar-toggle[aria-expanded="true"] .frerado-catalogbar-toggle-chevron{transform:rotate(180deg)}
+
+/* Panneau (sans JS : affiché en liste statique, donc toujours accessible) */
+.frerado-catalogbar-root .frerado-catalogbar-panel{
+  margin-top:8px;
+  width:340px;
+  max-width:100%;
+  text-align:left;
+  border:1px solid var(--frerado-catalogbar-line);
+  border-radius:10px;
+  background:#ffffff;
+  box-shadow:0 14px 34px rgba(11,36,71,.14),0 2px 6px rgba(11,36,71,.06);
+  overflow:hidden;
+}
+.frerado-catalogbar-root.frerado-catalogbar-is-enhanced .frerado-catalogbar-panel{
+  position:absolute;
+  top:48px;
+  left:0;
+  width:360px;
+  z-index:1000;
+  visibility:hidden;
+  opacity:0;
+  transform:translateY(-6px);
+  pointer-events:none;
+  transition:opacity .18s ease,transform .18s ease,visibility 0s linear .18s;
+}
+.frerado-catalogbar-root.frerado-catalogbar-is-open .frerado-catalogbar-panel{
+  visibility:visible;
+  opacity:1;
+  transform:none;
+  pointer-events:auto;
+  transition:opacity .18s ease,transform .18s ease,visibility 0s;
+}
+.frerado-catalogbar-root .frerado-catalogbar-nav{display:block;margin:0;padding:8px}
+.frerado-catalogbar-root .frerado-catalogbar-panel-title{
+  margin:0;
+  padding:8px 12px 10px;
+  color:var(--frerado-catalogbar-muted);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.frerado-catalogbar-root .frerado-catalogbar-list{display:block;margin:0;padding:0;list-style:none}
+.frerado-catalogbar-root .frerado-catalogbar-item{display:block;margin:0;padding:0;list-style:none}
+.frerado-catalogbar-root .frerado-catalogbar-item::before,
+.frerado-catalogbar-root .frerado-catalogbar-item::marker{content:none}
+.frerado-catalogbar-root .frerado-catalogbar-link,
+.frerado-catalogbar-root .frerado-catalogbar-link:visited{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-height:48px;
+  padding:8px 12px;
+  border-radius:8px;
+  color:var(--frerado-catalogbar-text);
+  font-size:15px;
+  font-weight:500;
+  line-height:1.3;
+  text-decoration:none;
+  box-shadow:none;
+  transition:background-color .15s ease,color .15s ease;
+}
+.frerado-catalogbar-root .frerado-catalogbar-link:hover,
+.frerado-catalogbar-root .frerado-catalogbar-link:focus-visible{
+  background:var(--frerado-catalogbar-blue-soft);
+  color:var(--frerado-catalogbar-blue-dark);
+  text-decoration:none;
+}
+.frerado-catalogbar-root .frerado-catalogbar-link:focus-visible{
+  outline:2px solid var(--frerado-catalogbar-blue);
+  outline-offset:-2px;
+}
+.frerado-catalogbar-root .frerado-catalogbar-ico{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 34px;
+  width:34px;
+  height:34px;
+  border-radius:8px;
+  background:var(--frerado-catalogbar-blue-soft);
+  color:var(--frerado-catalogbar-blue);
+  transition:background-color .15s ease,color .15s ease;
+}
+.frerado-catalogbar-root .frerado-catalogbar-ico svg{
+  display:block;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.7;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.frerado-catalogbar-root .frerado-catalogbar-link:hover .frerado-catalogbar-ico,
+.frerado-catalogbar-root .frerado-catalogbar-link:focus-visible .frerado-catalogbar-ico{
+  background:var(--frerado-catalogbar-blue);
+  color:#ffffff;
+}
+.frerado-catalogbar-root .frerado-catalogbar-text{
+  flex:1 1 auto;
+  min-width:0;
+  overflow-wrap:anywhere;
+  hyphens:auto;
+}
+
+/* Recherche WooCommerce */
+.frerado-catalogbar-root .frerado-catalogbar-search{
+  display:flex;
+  align-items:stretch;
+  flex:1 1 auto;
+  min-width:0;
+  height:48px;
+  margin:0;
+  padding:0;
+  border:1px solid var(--frerado-catalogbar-line);
+  border-radius:8px;
+  background:#ffffff;
+  overflow:hidden;
+  transition:border-color .2s ease,box-shadow .2s ease;
+}
+.frerado-catalogbar-root .frerado-catalogbar-search:hover{border-color:#b7c4d6}
+.frerado-catalogbar-root .frerado-catalogbar-search:focus-within{
+  border-color:var(--frerado-catalogbar-blue);
+  box-shadow:0 0 0 3px rgba(21,101,216,.18);
+}
+.frerado-catalogbar-root .frerado-catalogbar-input,
+.frerado-catalogbar-root .frerado-catalogbar-input:focus{
+  flex:1 1 auto;
+  width:100%;
+  min-width:0;
+  height:100%;
+  margin:0;
+  padding:0 16px;
+  border:0;
+  border-radius:0;
+  outline:none;
+  background:transparent;
+  box-shadow:none;
+  color:var(--frerado-catalogbar-text);
+  font-family:inherit;
+  font-size:16px;
+  line-height:1.2;
+  -webkit-appearance:none;
+  appearance:none;
+}
+.frerado-catalogbar-root .frerado-catalogbar-input::placeholder{color:#7c889a;opacity:1}
+.frerado-catalogbar-root .frerado-catalogbar-input::-webkit-search-decoration{-webkit-appearance:none}
+.frerado-catalogbar-root .frerado-catalogbar-submit,
+.frerado-catalogbar-root .frerado-catalogbar-submit:focus{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 56px;
+  width:56px;
+  height:100%;
+  min-height:44px;
+  margin:0;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:var(--frerado-catalogbar-blue);
+  color:#ffffff;
+  box-shadow:none;
+  cursor:pointer;
+  transition:background-color .2s ease;
+}
+.frerado-catalogbar-root .frerado-catalogbar-submit:hover{background:var(--frerado-catalogbar-blue-dark);color:#ffffff}
+.frerado-catalogbar-root .frerado-catalogbar-submit:focus-visible{
+  outline:2px solid #ffffff;
+  outline-offset:-5px;
+  background:var(--frerado-catalogbar-blue-dark);
+}
+.frerado-catalogbar-root .frerado-catalogbar-submit svg{display:block}
+
+.frerado-catalogbar-root .frerado-catalogbar-sr{
+  position:absolute;
+  width:1px;
+  height:1px;
+  margin:-1px;
+  padding:0;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  white-space:nowrap;
+  border:0;
+}
+
+/* Tablette */
+@media (max-width:1024px){
+  .frerado-catalogbar-root .frerado-catalogbar-inner{gap:10px}
+  .frerado-catalogbar-root .frerado-catalogbar-toggle{padding:0 16px}
+}
+/* Mobile : bouton et recherche sur deux lignes, panneau pleine largeur */
+@media (max-width:600px){
+  .frerado-catalogbar-root .frerado-catalogbar-inner{flex-wrap:wrap;gap:8px}
+  .frerado-catalogbar-root .frerado-catalogbar-cats{flex:1 1 100%}
+  .frerado-catalogbar-root .frerado-catalogbar-toggle,
+  .frerado-catalogbar-root .frerado-catalogbar-toggle:focus{width:100%;justify-content:flex-start}
+  .frerado-catalogbar-root .frerado-catalogbar-toggle-chevron{margin-left:auto}
+  .frerado-catalogbar-root .frerado-catalogbar-panel{width:100%}
+  .frerado-catalogbar-root.frerado-catalogbar-is-enhanced .frerado-catalogbar-panel{
+    right:0;
+    width:auto;
+    max-height:calc(100vh - 140px);
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+  }
+  .frerado-catalogbar-root .frerado-catalogbar-search{flex:1 1 100%}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .frerado-catalogbar-root *,
+  .frerado-catalogbar-root.frerado-catalogbar-is-enhanced .frerado-catalogbar-panel,
+  .frerado-catalogbar-root.frerado-catalogbar-is-open .frerado-catalogbar-panel{
+    transition:none !important;
+  }
+  .frerado-catalogbar-root.frerado-catalogbar-is-enhanced .frerado-catalogbar-panel{transform:none}
+}
+</style>
+
+<script>
+(function () {
+  'use strict';
+
+  var OPEN = 'frerado-catalogbar-is-open';
+  var READY = 'data-frerado-catalogbar-ready';
+
+  function init(root) {
+    if (root.hasAttribute(READY)) return;
+    root.setAttribute(READY, '1');
+
+    var toggle = root.querySelector('.frerado-catalogbar-toggle');
+    var panel = root.querySelector('.frerado-catalogbar-panel');
+    if (!toggle || !panel) return;
+
+    root.classList.add('frerado-catalogbar-is-enhanced');
+
+    function links() {
+      return Array.prototype.slice.call(panel.querySelectorAll('.frerado-catalogbar-link'));
+    }
+    function isOpen() {
+      return root.classList.contains(OPEN);
+    }
+    function open() {
+      root.classList.add(OPEN);
+      toggle.setAttribute('aria-expanded', 'true');
+    }
+    function close(returnFocus) {
+      if (!isOpen()) return;
+      root.classList.remove(OPEN);
+      toggle.setAttribute('aria-expanded', 'false');
+      if (returnFocus) toggle.focus();
+    }
+    function focusLink(index) {
+      var list = links();
+      if (!list.length) return;
+      list[(index + list.length) % list.length].focus();
+    }
+
+    toggle.addEventListener('click', function () {
+      if (isOpen()) close(false); else open();
+    });
+
+    toggle.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        open();
+        focusLink(0);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        open();
+        focusLink(-1);
+      }
+    });
+
+    panel.addEventListener('keydown', function (e) {
+      var list = links();
+      var i = list.indexOf(document.activeElement);
+      if (i === -1) return;
+      if (e.key === 'ArrowDown') { e.preventDefault(); focusLink(i + 1); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); focusLink(i - 1); }
+      else if (e.key === 'Home') { e.preventDefault(); focusLink(0); }
+      else if (e.key === 'End') { e.preventDefault(); focusLink(-1); }
+    });
+
+    root.addEventListener('keydown', function (e) {
+      if ((e.key === 'Escape' || e.key === 'Esc') && isOpen()) {
+        e.preventDefault();
+        close(true);
+      }
+    });
+
+    // Tabulation hors du bouton et du panneau (vers la recherche ou la page) : on referme sans voler le focus.
+    var cats = toggle.parentNode;
+    cats.addEventListener('focusout', function (e) {
+      if (e.relatedTarget && !cats.contains(e.relatedTarget)) close(false);
+    });
+
+    // Clic / toucher à l'extérieur.
+    document.addEventListener('pointerdown', function (e) {
+      if (isOpen() && root.isConnected && !root.contains(e.target)) close(false);
+    });
+  }
+
+  function run() {
+    var roots = document.querySelectorAll('.frerado-catalogbar-root');
+    for (var i = 0; i < roots.length; i++) init(roots[i]);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', run);
+  } else {
+    run();
+  }
+})();
+</script>
