@@ -31,6 +31,8 @@
           <span>Zone Industrielle, Tit Mellil, Casablanca, Maroc</span>
         </li>
       </ul>
+      <!-- Mobile (767px et moins) : remplace les coordonnées dans la top bar -->
+      <p class="frerado-header-tagline">Large choix de moteurs électriques et équipements industriels</p>
 
       <!-- RÉSEAUX SOCIAUX : URL non fournies, bloc désactivé.
            Pour l'activer : supprimer cette ligne de commentaire et la ligne « FIN RÉSEAUX SOCIAUX »,
@@ -150,6 +152,7 @@
   --frerado-header-white:#ffffff;
   --frerado-header-max:1280px;
   --frerado-header-logo-w:220px;
+  --frerado-header-logo-h:56px;
   --frerado-header-gutter:24px;
   --frerado-header-ctrl:44px;
   --frerado-header-ring:0 0 0 3px #ffffff,0 0 0 5px #1565d8;
@@ -157,7 +160,7 @@
   z-index:100;
   display:block;
   width:100%;
-  max-width:100%;
+  max-width:none;
   margin:0;
   padding:0;
   background:var(--frerado-header-white);
@@ -236,6 +239,7 @@
 .frerado-header .frerado-header-social-link:focus-visible{outline:2px solid #9cc3ff;outline-offset:2px;border-radius:3px}
 .frerado-header .frerado-header-contact-ico{color:#6aa5ff}
 .frerado-header .frerado-header-contact span{min-width:0;overflow-wrap:anywhere}
+.frerado-header .frerado-header-tagline{display:none}
 .frerado-header .frerado-header-social{display:flex;align-items:center;gap:4px;flex:0 0 auto}
 .frerado-header .frerado-header-social-link,
 .frerado-header .frerado-header-social-link:visited{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;color:var(--frerado-header-white);border-radius:50%}
@@ -243,16 +247,18 @@
 
 /* --- 2. Navigation principale --- */
 .frerado-header .frerado-header-main{position:relative;background:var(--frerado-header-white);border-bottom:1px solid var(--frerado-header-line)}
-.frerado-header .frerado-header-main-inner{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:72px}
+.frerado-header .frerado-header-main-inner{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:0;padding-top:4px;padding-bottom:4px}
 .frerado-header .frerado-header-logo,
-.frerado-header .frerado-header-logo:visited{display:inline-flex;align-items:center;flex:0 1 auto;min-width:0;max-width:var(--frerado-header-logo-w);padding:6px 0;border-radius:4px}
+.frerado-header .frerado-header-logo:visited{display:inline-flex;align-items:center;flex:0 1 auto;min-width:0;max-width:var(--frerado-header-logo-w);padding:0;border-radius:4px}
 .frerado-header .frerado-header-logo:focus-visible{outline:2px solid var(--frerado-header-blue);outline-offset:3px}
 .frerado-header .frerado-header-logo-img{
   display:block;
   width:var(--frerado-header-logo-w);
   height:auto;
   max-width:100%;
-  max-height:none;
+  max-height:var(--frerado-header-logo-h);
+  object-fit:contain;
+  object-position:left center;
   margin:0;
   padding:0;
   border:0;
@@ -507,7 +513,7 @@
 /* --- Tablette & mobile : menu hamburger --- */
 @media (max-width:991px){
   .frerado-header{--frerado-header-gutter:16px}
-  .frerado-header .frerado-header-main-inner{min-height:64px;gap:12px}
+  .frerado-header .frerado-header-main-inner{min-height:56px;gap:12px}
   .frerado-header .frerado-header-contact-link{min-height:var(--frerado-header-ctrl)}
 
   /* Sans JS : navigation lisible sur une ligne sous le logo */
@@ -554,13 +560,28 @@
   .frerado-header.frerado-header-js .frerado-header-cta{display:flex;width:100%;margin-top:12px;min-height:48px}
 }
 
-/* --- Mobile : top bar compacte, catégories et recherche sur deux lignes --- */
+/* --- Mobile (767px et moins) : top bar = phrase d'accroche à la place des coordonnées --- */
+@media (max-width:767px){
+  .frerado-header .frerado-header-top-inner{justify-content:center;min-height:0;padding-top:6px;padding-bottom:6px}
+  .frerado-header .frerado-header-contact,
+  .frerado-header .frerado-header-social{display:none}
+  .frerado-header .frerado-header-tagline{
+    display:block;
+    margin:0;
+    padding:0;
+    color:var(--frerado-header-white);
+    font-size:12px;
+    font-weight:500;
+    line-height:1.4;
+    letter-spacing:.01em;
+    text-align:center;
+    overflow-wrap:break-word;
+  }
+}
+
+/* --- Mobile : catégories et recherche sur deux lignes --- */
 @media (max-width:600px){
-  .frerado-header .frerado-header-top-inner{justify-content:center;padding-top:4px;padding-bottom:6px}
-  .frerado-header .frerado-header-contact{justify-content:center;gap:0 18px}
-  .frerado-header .frerado-header-contact-link{min-height:var(--frerado-header-ctrl);font-size:12.5px}
-  .frerado-header .frerado-header-contact-address{flex:1 1 100%;justify-content:center;text-align:center;font-size:12px;color:rgba(255,255,255,.75)}
-  .frerado-header{--frerado-header-logo-w:160px}
+  .frerado-header{--frerado-header-logo-w:160px;--frerado-header-logo-h:44px}
   .frerado-header .frerado-header-catbar-inner{flex-wrap:wrap;gap:8px}
   .frerado-header .frerado-header-cats{flex:1 1 100%}
   .frerado-header .frerado-header-cats-toggle,
