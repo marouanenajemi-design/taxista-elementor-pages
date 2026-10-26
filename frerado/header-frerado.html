@@ -149,6 +149,7 @@
   --frerado-header-muted:#5d6b80;
   --frerado-header-white:#ffffff;
   --frerado-header-max:1280px;
+  --frerado-header-logo-w:220px;
   --frerado-header-gutter:24px;
   --frerado-header-ctrl:44px;
   --frerado-header-ring:0 0 0 3px #ffffff,0 0 0 5px #1565d8;
@@ -209,7 +210,7 @@
 }
 .frerado-header .frerado-header-wrap{
   width:100%;
-  max-width:var(--frerado-header-max);
+  max-width:calc(var(--frerado-header-max) + 2 * var(--frerado-header-gutter));
   margin:0 auto;
   padding:0 var(--frerado-header-gutter);
 }
@@ -242,27 +243,26 @@
 
 /* --- 2. Navigation principale --- */
 .frerado-header .frerado-header-main{position:relative;background:var(--frerado-header-white);border-bottom:1px solid var(--frerado-header-line)}
-.frerado-header .frerado-header-main-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:72px}
+.frerado-header .frerado-header-main-inner{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:72px}
 .frerado-header .frerado-header-logo,
-.frerado-header .frerado-header-logo:visited{display:inline-flex;align-items:center;flex:0 0 auto;padding:6px 0;border-radius:4px}
+.frerado-header .frerado-header-logo:visited{display:inline-flex;align-items:center;flex:0 1 auto;min-width:0;max-width:var(--frerado-header-logo-w);padding:6px 0;border-radius:4px}
 .frerado-header .frerado-header-logo:focus-visible{outline:2px solid var(--frerado-header-blue);outline-offset:3px}
 .frerado-header .frerado-header-logo-img{
   display:block;
-  width:auto;
-  height:54px;
-  max-width:240px;
+  width:var(--frerado-header-logo-w);
+  height:auto;
+  max-width:100%;
   max-height:none;
-  object-fit:contain;
-  object-position:left center;
   margin:0;
   padding:0;
   border:0;
   border-radius:0;
   box-shadow:none;
 }
-.frerado-header .frerado-header-menu{display:flex;align-items:center;gap:28px;min-width:0}
-.frerado-header .frerado-header-nav{display:block;margin:0;padding:0;background:none}
-.frerado-header .frerado-header-nav-list{display:flex;align-items:center;gap:6px}
+/* La navigation occupe l'espace entre le logo et le bouton devis, et s'y centre */
+.frerado-header .frerado-header-menu{display:flex;align-items:center;flex:1 1 auto;gap:28px;min-width:0}
+.frerado-header .frerado-header-nav{display:block;flex:1 1 auto;min-width:0;margin:0;padding:0;background:none}
+.frerado-header .frerado-header-nav-list{display:flex;align-items:center;justify-content:center;gap:6px}
 .frerado-header .frerado-header-nav-link,
 .frerado-header .frerado-header-nav-link:visited{
   position:relative;
@@ -497,6 +497,7 @@
 
 /* --- Desktop intermédiaire --- */
 @media (max-width:1180px){
+  .frerado-header .frerado-header-main-inner,
   .frerado-header .frerado-header-menu{gap:16px}
   .frerado-header .frerado-header-nav-link{padding:0 10px}
   .frerado-header .frerado-header-nav-link::after{left:10px;right:10px}
@@ -507,13 +508,12 @@
 @media (max-width:991px){
   .frerado-header{--frerado-header-gutter:16px}
   .frerado-header .frerado-header-main-inner{min-height:64px;gap:12px}
-  .frerado-header .frerado-header-logo-img{height:46px;max-width:200px}
   .frerado-header .frerado-header-contact-link{min-height:var(--frerado-header-ctrl)}
 
   /* Sans JS : navigation lisible sur une ligne sous le logo */
   .frerado-header .frerado-header-main-inner{flex-wrap:wrap}
   .frerado-header .frerado-header-menu{flex-wrap:wrap;gap:8px 16px;padding-bottom:10px}
-  .frerado-header .frerado-header-nav-list{flex-wrap:wrap}
+  .frerado-header .frerado-header-nav-list{flex-wrap:wrap;justify-content:flex-start}
 
   /* Avec JS : panneau déroulant */
   .frerado-header.frerado-header-js .frerado-header-main-inner{flex-wrap:nowrap}
@@ -560,7 +560,7 @@
   .frerado-header .frerado-header-contact{justify-content:center;gap:0 18px}
   .frerado-header .frerado-header-contact-link{min-height:var(--frerado-header-ctrl);font-size:12.5px}
   .frerado-header .frerado-header-contact-address{flex:1 1 100%;justify-content:center;text-align:center;font-size:12px;color:rgba(255,255,255,.75)}
-  .frerado-header .frerado-header-logo-img{height:42px;max-width:170px}
+  .frerado-header{--frerado-header-logo-w:160px}
   .frerado-header .frerado-header-catbar-inner{flex-wrap:wrap;gap:8px}
   .frerado-header .frerado-header-cats{flex:1 1 100%}
   .frerado-header .frerado-header-cats-toggle,
